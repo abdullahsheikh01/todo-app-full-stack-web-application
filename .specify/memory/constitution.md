@@ -1,27 +1,28 @@
 <!--
 Sync Impact Report
 ==================
-Version change: 0.0.0 → 1.0.0 (MAJOR - Initial constitution creation)
+Version change: 1.0.0 → 1.1.0 (MINOR - Technology preference change)
 
-Modified principles: N/A (initial creation)
+Modified sections:
+- Technology Stack > Frontend: Styling changed from Tailwind CSS → CSS Modules
 
-Added sections:
-- Core Principles (8 principles: I-VIII)
-- Technology Stack (Phase II)
-- API Design Standards
-- Security Requirements
-- Development Workflow
-- Governance
+Added sections: None
 
-Removed sections: N/A (initial creation)
+Removed sections: None
 
 Templates requiring updates:
-- ✅ plan-template.md - Constitution Check section aligns with principles
-- ✅ spec-template.md - User story structure compatible with workflow
-- ✅ tasks-template.md - Phase structure supports TDD requirements
+- ✅ plan-template.md - No changes required (styling is implementation detail)
+- ✅ spec-template.md - No changes required
+- ✅ tasks-template.md - No changes required
 - ✅ phr-template.prompt.md - No changes required
 
 Follow-up TODOs: None
+
+---
+Previous Sync Impact Report (v1.0.0):
+Version change: 0.0.0 → 1.0.0 (MAJOR - Initial constitution creation)
+Added: Core Principles (I-VIII), Technology Stack, API Design Standards,
+       Security Requirements, Development Workflow, Governance
 -->
 
 # Todo App Phase II Constitution
@@ -143,7 +144,7 @@ reduce merge conflicts and speed up delivery.
 |-----------|------------|---------|
 | Framework | Next.js (App Router) | 16+ |
 | Language | TypeScript | Strict mode |
-| Styling | Tailwind CSS | Latest |
+| Styling | CSS Modules | Built-in |
 | Package Manager | npm | Latest |
 | Auth Client | Better Auth | Latest |
 
@@ -317,4 +318,4 @@ tasks
 - Constitution supersedes ad-hoc decisions
 - Complexity deviations MUST be justified in ADRs
 
-**Version**: 1.0.0 | **Ratified**: 2026-03-20 | **Last Amended**: 2026-03-20
+**Version**: 1.1.0 | **Ratified**: 2026-03-20 | **Last Amended**: 2026-03-20
