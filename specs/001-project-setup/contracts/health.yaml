@@ -1,0 +1,57 @@
+openapi: 3.0.3
+info:
+  title: Todo App - Health API
+  description: Health check endpoint for the Todo App backend
+  version: 1.0.0
+
+servers:
+  - url: http://localhost:8000
+    description: Local development server
+
+paths:
+  /health:
+    get:
+      summary: Health Check
+      description: Returns the health status of the server and database connectivity
+      operationId: healthCheck
+      tags:
+        - Health
+      responses:
+        '200':
+          description: Health status response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HealthResponse'
+              examples:
+                healthy:
+                  summary: All systems operational
+                  value:
+                    status: ok
+                    database: connected
+                database_error:
+                  summary: Database connection failed
+                  value:
+                    status: ok
+                    database: "error: connection failed"
+
+components:
+  schemas:
+    HealthResponse:
+      type: object
+      required:
+        - status
+        - database
+      properties:
+        status:
+          type: string
+          description: Server status
+          enum:
+            - ok
+          example: ok
+        database:
+          type: string
+          description: Database connectivity status
+          examples:
+            - connected
+            - "error: connection failed"

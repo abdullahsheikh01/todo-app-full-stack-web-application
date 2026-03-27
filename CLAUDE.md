@@ -187,3 +187,9 @@ Project principles are defined in `.specify/memory/constitution.md`. This includ
 - Performance expectations
 - Security guidelines
 - Architecture patterns
+
+## Active Technologies
+- Python 3.13+ (backend), TypeScript strict mode (frontend) + FastAPI, uvicorn, SQLModel, python-jose, python-dotenv, psycopg2-binary (backend); Next.js 16+, CSS Modules (frontend) (001-project-setup)
+
+## Recent Changes
+- 001-project-setup: Added Python 3.13+ (backend), TypeScript strict mode (frontend) + FastAPI, uvicorn, SQLModel, python-jose, python-dotenv, psycopg2-binary (backend); Next.js 16+, CSS Modules (frontend)
