@@ -24,10 +24,10 @@
 
 **Purpose**: Project initialization and basic structure
 
-- [ ] T001 Create backend directory structure at backend/
-- [ ] T002 Create frontend directory structure at frontend/
-- [ ] T003 [P] Create root .gitignore with node_modules, __pycache__, .env, .next patterns
-- [ ] T004 [P] Create root README.md with project overview and setup instructions
+- [X] T001 Create backend directory structure at backend/
+- [X] T002 Create frontend directory structure at frontend/
+- [X] T003 [P] Create root .gitignore with node_modules, __pycache__, .env, .next patterns
+- [X] T004 [P] Create root README.md with project overview and setup instructions
 
 **Checkpoint**: Basic directory structure ready
 
@@ -39,10 +39,10 @@
 
 **⚠️ CRITICAL**: No user story work can begin until this phase is complete
 
-- [ ] T005 Create backend/pyproject.toml with dependencies (fastapi, uvicorn, sqlmodel, python-jose, python-dotenv, psycopg2-binary)
-- [ ] T006 [P] Create backend/.env.example with DATABASE_URL placeholder
-- [ ] T007 Create backend/db.py with Neon PostgreSQL connection using SQLModel
-- [ ] T008 Create backend/models.py with Task model (id, user_id, title, description, completed, created_at, updated_at)
+- [X] T005 Create backend/pyproject.toml with dependencies (fastapi, uvicorn, sqlmodel, python-jose, python-dotenv, psycopg2-binary)
+- [X] T006 [P] Create backend/.env.example with DATABASE_URL placeholder
+- [X] T007 Create backend/db.py with Neon PostgreSQL connection using SQLModel
+- [X] T008 Create backend/models.py with Task model (id, user_id, title, description, completed, created_at, updated_at)
 
 **Checkpoint**: Foundation ready - user story implementation can now begin
 
@@ -56,9 +56,9 @@
 
 ### Implementation for User Story 1
 
-- [ ] T009 [US1] Create backend/main.py with FastAPI app instance and CORS middleware for localhost:3000
-- [ ] T010 [US1] Implement GET /health endpoint in backend/main.py returning {"status": "ok", "database": "connected|error"}
-- [ ] T011 [US1] Add database connectivity check to health endpoint using db.py connection
+- [X] T009 [US1] Create backend/main.py with FastAPI app instance and CORS middleware for localhost:3000
+- [X] T010 [US1] Implement GET /health endpoint in backend/main.py returning {"status": "ok", "database": "connected|error"}
+- [X] T011 [US1] Add database connectivity check to health endpoint using db.py connection
 
 **Checkpoint**: Backend starts on :8000, GET /health returns database status
 
@@ -72,12 +72,12 @@
 
 ### Implementation for User Story 2
 
-- [ ] T012 [US2] Initialize Next.js 16+ project in frontend/ with App Router and TypeScript strict mode
-- [ ] T013 [US2] Create frontend/.env.example with NEXT_PUBLIC_API_URL=http://localhost:8000
-- [ ] T014 [US2] Create frontend/app/layout.tsx with root layout structure
-- [ ] T015 [P] [US2] Create frontend/app/page.module.css with landing page styles
-- [ ] T016 [US2] Create frontend/app/page.tsx displaying "Todo App - Phase II" with CSS Modules
-- [ ] T017 [US2] Create frontend/lib/api.ts with typed fetch client using NEXT_PUBLIC_API_URL
+- [X] T012 [US2] Initialize Next.js 16+ project in frontend/ with App Router and TypeScript strict mode
+- [X] T013 [US2] Create frontend/.env.example with NEXT_PUBLIC_API_URL=http://localhost:8000
+- [X] T014 [US2] Create frontend/app/layout.tsx with root layout structure
+- [X] T015 [P] [US2] Create frontend/app/page.module.css with landing page styles
+- [X] T016 [US2] Create frontend/app/page.tsx displaying "Todo App - Phase II" with CSS Modules
+- [X] T017 [US2] Create frontend/lib/api.ts with typed fetch client using NEXT_PUBLIC_API_URL
 
 **Checkpoint**: Frontend starts on :3000, landing page displays "Todo App - Phase II"
 
@@ -91,9 +91,9 @@
 
 ### Implementation for User Story 3
 
-- [ ] T018 [P] [US3] Create backend/Dockerfile with Python 3.13+ and UV setup
-- [ ] T019 [P] [US3] Create frontend/Dockerfile with Node.js and npm setup
-- [ ] T020 [US3] Create root docker-compose.yml orchestrating both services with environment variables
+- [X] T018 [P] [US3] Create backend/Dockerfile with Python 3.13+ and UV setup
+- [X] T019 [P] [US3] Create frontend/Dockerfile with Node.js and npm setup
+- [X] T020 [US3] Create root docker-compose.yml orchestrating both services with environment variables
 
 **Checkpoint**: docker-compose up runs both services, frontend loads, health endpoint responds
 
@@ -103,9 +103,9 @@
 
 **Purpose**: Final validation and documentation
 
-- [ ] T021 Update root README.md with complete setup instructions per quickstart.md
-- [ ] T022 Validate all acceptance criteria from spec.md
-- [ ] T023 Run quickstart.md verification checklist
+- [X] T021 Update root README.md with complete setup instructions per quickstart.md
+- [X] T022 Validate all acceptance criteria from spec.md
+- [X] T023 Run quickstart.md verification checklist
 
 ---
 
