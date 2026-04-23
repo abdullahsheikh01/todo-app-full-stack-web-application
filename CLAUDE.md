@@ -191,6 +191,8 @@ Project principles are defined in `.specify/memory/constitution.md`. This includ
 ## Active Technologies
 - Python 3.13+ (backend), TypeScript strict mode (frontend) + FastAPI, uvicorn, SQLModel, python-jose, python-dotenv, psycopg2-binary (backend); Next.js 16+, CSS Modules (frontend) (001-project-setup)
 - Python 3.13+ (backend), TypeScript strict mode (frontend) + FastAPI, PyJWT, httpx, cachetools (backend); Better Auth, Next.js 16+ (frontend) (002-user-auth)
+- TypeScript (strict mode) with Next.js 16+ (App Router) + React 19+, Next.js 16+, Better Auth (client) (003-task-ui)
+- N/A (frontend only; uses existing API client to communicate with backend) (003-task-ui)
 
 ## Recent Changes
 - 001-project-setup: Added Python 3.13+ (backend), TypeScript strict mode (frontend) + FastAPI, uvicorn, SQLModel, python-jose, python-dotenv, psycopg2-binary (backend); Next.js 16+, CSS Modules (frontend)
